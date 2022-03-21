@@ -20,6 +20,9 @@
     <script src="js/home.js"></script>
     <script src="js/about.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/terminal.js" type="module"></script>
+    <script src="js/typing.js" type="module"></script>
+    <script src="js/scrollbar.js" type="text/javascript"></script>
 
     <link rel="stylesheet" type="text/css" href="css/properties.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -38,7 +41,7 @@
         <nav class="nav">
           <div class="logo">
             <a class="in_animation in_animation_fast" href="#home">
-              <img src="resources/shapes/icon.svg" alt="logo" />
+              <img src="resources/images/ID.png" alt="logo" />
             </a>
           </div>
           <div class="menu">
@@ -128,8 +131,9 @@
         <a id="home"></a>
         <section class="section" id="home_section">
           <div id="particles"></div>
-          <div class="content">
-            <span class="hi in_animation">Hi, my name is</span>
+          <div class="HOME" id="HOME">
+            <div class="terminal" id="terminal"></div>
+            <div class="hi in_animation"></div>
           </div>
         </section>
 
@@ -240,6 +244,10 @@
             </div>
           </div>
         </footer>
+
+        <!--Content end-->
+        <div id="progressbar"></div>
+        <div id="scrollpathg"></div>
       </main>
     </div>
   </body>
