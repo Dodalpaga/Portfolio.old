@@ -54,5 +54,6 @@ body {
   --fade_dark_blue: rgba(26, 16, 48, 0.9);
   --black_text: #425466;
   --dark_green: rgb(50, 131, 61);
+  --very_dark_green: rgb(17, 68, 24);
   --purple: rgb(65, 52, 102);
 }

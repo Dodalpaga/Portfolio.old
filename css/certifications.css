@@ -1,23 +1,23 @@
-#projects_section {
-  background-color: var(--dark_green);
+#certifications_section {
+  background-color: var(--purple);
 }
 
-.projects_end {
-  background-color: var(--very_dark_green);
+.certifications_end {
+  background-color: var(--dark_blue);
 }
 
-#projects_section .section_title {
+#certifications_section .section_title {
   color: var(--white);
   margin-bottom: 60px;
 }
 
-#projects_section .project.in_animation {
+#certifications_section .project.in_animation {
   opacity: 0;
   transform: translateY(70px);
   transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 
-#projects_section .sort_choices {
+#certifications_section .sort_choices {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,13 +27,13 @@
   gap: 20px;
 }
 
-#projects_section .sort_choices .label {
+#certifications_section .sort_choices .label {
   color: var(--white);
   font-family: raleway_semi_bold;
   font-size: 17px;
 }
 
-#projects_section .sort_choices .choice {
+#certifications_section .sort_choices .choice {
   color: var(--light_blue);
   font-family: raleway_semi_bold;
   font-size: 15px;
@@ -44,22 +44,22 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-#projects_section .sort_choices .choice:hover {
+#certifications_section .sort_choices .choice:hover {
   background-color: var(--fade_light_blue);
 }
 
-#projects_section .sort_choices .choice.selected {
-  color: var(--dark_green);
+#certifications_section .sort_choices .choice.selected {
+  color: var(--purple);
   background-color: var(--light_blue);
   cursor: default;
   pointer-events: none;
 }
 
-#projects_section .sort_choices .choice.selected:hover {
+#certifications_section .sort_choices .choice.selected:hover {
   background-color: var(--light_blue);
 }
 
-#projects_section .projects_content {
+#certifications_section .certifications_content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,18 +70,18 @@
 }
 
 @media screen and (max-width: 1125px) {
-  #projects_section .projects_content {
+  #certifications_section .certifications_content {
     gap: clamp(20px, 5vw, 100px);
   }
 }
 
 @media screen and (max-width: 780px) {
-  #projects_section .projects_content {
+  #certifications_section .certifications_content {
     gap: 35px;
   }
 }
 
-#projects_section .project {
+#certifications_section .project {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,20 +89,20 @@
   padding-right: clamp(0px, calc(18vw - 234px), 60px);
 }
 
-#projects_section .project.inverted {
+#certifications_section .project.inverted {
   flex-direction: row-reverse;
   padding-left: clamp(0px, calc(18vw - 234px), 60px);
   padding-right: 0px;
 }
 
-#projects_section .project_view {
+#certifications_section .project_view {
   z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#projects_section .project_view a {
+#certifications_section .project_view a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,22 +113,22 @@
   transition: filter 0.3s ease;
 }
 
-#projects_section .project_view a:hover {
+#certifications_section .project_view a:hover {
   filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.7));
 }
 
-#projects_section .project_view video {
+#certifications_section .project_view video {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-#projects_section .project_view img {
+#certifications_section .project_view img {
   width: 100%;
   height: 100%;
 }
 
-#projects_section .project_text {
+#certifications_section .project_text {
   z-index: 10;
   position: relative;
   display: flex;
@@ -138,13 +138,13 @@
   margin-right: -100px;
 }
 
-#projects_section .inverted .project_text {
+#certifications_section .inverted .project_text {
   align-items: flex-end;
   margin-left: -100px;
   margin-right: 0px;
 }
 
-#projects_section .project_text .type {
+#certifications_section .project_text .type {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -157,13 +157,13 @@
   margin-bottom: 10px;
 }
 
-#projects_section .inverted .project_text .type {
+#certifications_section .inverted .project_text .type {
   margin-left: 0px;
   margin-right: 15px;
   flex-direction: row-reverse;
 }
 
-#projects_section .project_text .project_title {
+#certifications_section .project_text .project_title {
   font-family: calibre_semi_bold;
   font-size: 32px;
   color: var(--white);
@@ -173,16 +173,16 @@
   transition: color 0.2s ease;
 }
 
-#projects_section .inverted .project_text .project_title {
+#certifications_section .inverted .project_text .project_title {
   margin-left: 0px;
   margin-right: 15px;
 }
 
-#projects_section .project_text .project_title:hover {
+#certifications_section .project_text .project_title:hover {
   color: var(--light_blue);
 }
 
-#projects_section .project_text .text {
+#certifications_section .project_text .text {
   background-color: var(--purple);
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.4));
   border-radius: 15px;
@@ -191,22 +191,22 @@
   transition: filter 0.3s ease;
 }
 
-#projects_section .project_text .text:hover {
+#certifications_section .project_text .text:hover {
   filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.6));
 }
 
-#projects_section .project_text .text p {
+#certifications_section .project_text .text p {
   font-family: calibre_regular;
   font-size: 20px;
   text-align: start;
   color: var(--fade_white);
 }
 
-#projects_section .inverted .project_text .text p {
+#certifications_section .inverted .project_text .text p {
   text-align: end;
 }
 
-#projects_section .project_text .tags {
+#certifications_section .project_text .tags {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -217,13 +217,13 @@
   gap: 8px;
 }
 
-#projects_section .inverted .project_text .tags {
+#certifications_section .inverted .project_text .tags {
   justify-content: flex-end;
   margin-left: 0px;
   margin-right: 9px;
 }
 
-#projects_section .project_text .tags a {
+#certifications_section .project_text .tags a {
   font-family: raleway_semi_bold;
   font-size: 16px;
   color: var(--light_blue);
@@ -234,11 +234,11 @@
   transition: opacity 0.2s ease;
 }
 
-#projects_section .project_text .tags a:hover {
+#certifications_section .project_text .tags a:hover {
   opacity: 0.5;
 }
 
-#projects_section .project_text .links {
+#certifications_section .project_text .links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -246,20 +246,20 @@
   gap: 20px;
 }
 
-#projects_section .inverted .project_text .links {
+#certifications_section .inverted .project_text .links {
   margin-left: 0px;
   margin-right: 15px;
 }
 
-#projects_section .project_text .links .github {
+#certifications_section .project_text .links .github {
   --color: rgb(181, 184, 192);
 }
 
-#projects_section .project_text .links .test {
+#certifications_section .project_text .links .test {
   --color: rgb(41, 168, 99);
 }
 
-#projects_section .project_text .links svg {
+#certifications_section .project_text .links svg {
   width: 21px;
   fill: none;
   stroke-width: 1.9px;
@@ -270,22 +270,22 @@
   transition: opacity 0.2s ease;
 }
 
-#projects_section .project_text .links svg:hover {
+#certifications_section .project_text .links svg:hover {
   opacity: 0.6;
 }
 
-#projects_section .project_text .links a {
+#certifications_section .project_text .links a {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#projects_section .project_text .links .bubble {
+#certifications_section .project_text .links .bubble {
   pointer-events: none;
   position: absolute;
   text-align: center;
   bottom: -45px;
-  color: var(--dark_green);
+  color: var(--purple);
   padding: 6px 12px 6px 12px;
   background-color: var(--color);
   font-family: raleway_bold;
@@ -296,7 +296,7 @@
   transition: opacity 0.3s ease;
 }
 
-#projects_section .project_text .links .bubble::after {
+#certifications_section .project_text .links .bubble::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -308,7 +308,7 @@
   border-color: transparent transparent var(--color) transparent;
 }
 
-#projects_section .project_text .links a:hover .bubble {
+#certifications_section .project_text .links a:hover .bubble {
   opacity: 0.8;
 }
 
@@ -355,7 +355,7 @@
 }
 
 @media screen and (max-width: 780px) {
-  #projects_section .project {
+  #certifications_section .project {
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -363,11 +363,11 @@
     transition: filter 0.3s ease;
   }
 
-  #projects_section .project:hover {
+  #certifications_section .project:hover {
     filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.7));
   }
 
-  #projects_section .project_text {
+  #certifications_section .project_text {
     align-items: flex-start;
     margin-left: 0px;
     margin-right: 0px;
@@ -377,43 +377,43 @@
   }
 
   @media screen and (max-width: 500px) {
-    #projects_section .project_text {
+    #certifications_section .project_text {
       padding: 50px 25px 50px 25px;
     }
   }
 
-  #projects_section .project_text .type {
+  #certifications_section .project_text .type {
     margin-left: 0px;
   }
 
-  #projects_section .project_text .project_title {
+  #certifications_section .project_text .project_title {
     margin-left: 0px;
   }
 
-  #projects_section .project_text .text {
+  #certifications_section .project_text .text {
     background: none;
     filter: none;
     border-radius: 0px;
     padding: 10px 0px 8px 0px;
   }
 
-  #projects_section .project_text .text:hover {
+  #certifications_section .project_text .text:hover {
     filter: none;
   }
 
-  #projects_section .project_text .text p {
+  #certifications_section .project_text .text p {
     color: var(--white);
   }
 
-  #projects_section .project_text .tags {
+  #certifications_section .project_text .tags {
     margin-left: -6px;
   }
 
-  #projects_section .project_text .links {
+  #certifications_section .project_text .links {
     margin-left: 0px;
   }
 
-  #projects_section .project_text .links .bubble {
+  #certifications_section .project_text .links .bubble {
     bottom: 15px;
   }
 }

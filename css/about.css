@@ -72,3 +72,9 @@
 #about_section .link::before {
   background-color: var(--dark_green);
 }
+
+#about_section .typing {
+  position: relative;
+  margin-left: 3px;
+  color: #ff2f2f;
+}

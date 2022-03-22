@@ -26,16 +26,16 @@ function init_terminal(id, model_gltf) {
     0.1,
     5000
   );
-  camera.up.set(0, 0, 1);
+  camera.up.set(0, 0.1, 1);
   camera.position.set(0, 90, 0);
 
   /* 
   Generating controls
   */
   var controls = new OrbitControls(camera, renderer.domElement);
-  controls.maxDistance = controls.minDistance = 55;
+  controls.maxDistance = controls.minDistance = 60;
   controls.enablePan = false; // Empêche le déplacement en translation du terminal (clic-droit)
-  controls.enableRotate = true; // Permet la rotation du terminal (clic-gauche)
+  controls.enableRotate = false; // Permet la rotation du terminal (clic-gauche)
   controls.enableZoom = false; // Empêche le scrolling sur le canva !!!
 
   controls.autoRotate = true; // Permet la rotation par lui-même
@@ -62,12 +62,18 @@ function init_terminal(id, model_gltf) {
   let loader = new GLTFLoader();
 
   function animate() {
-    requestAnimationFrame(animate);
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect =
+      renderer.domElement.clientWidth / renderer.domElement.clientHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth * 1, window.innerHeight * 1);
+    renderer.setSize(
+      renderer.domElement.clientWidth,
+      renderer.domElement.clientHeight,
+      false
+    );
+
     controls.update();
     renderer.render(scene, camera);
+    requestAnimationFrame(animate);
   }
 
   loader.load(model_gltf, function (gltf) {
