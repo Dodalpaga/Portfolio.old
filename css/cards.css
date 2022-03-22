@@ -10,6 +10,7 @@ figure {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
 }
+
 figure:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -45,13 +46,13 @@ figure figcaption {
   transition: 0.25s;
 }
 figure .fig1 {
-  bottom: -250px;
+  bottom: -240px;
 }
 figure .fig2 {
-  bottom: -390px;
+  bottom: -380px;
 }
 figure .fig3 {
-  bottom: -390px;
+  bottom: -380px;
 }
 figure figcaption h3 {
   margin: 10px;
@@ -76,4 +77,20 @@ figure figcaption a {
   border-radius: 5px;
   color: white;
   font-size: 18px;
+}
+
+@media screen and (max-width: 1400px) {
+  figure {
+    height: 500px;
+    width: 85%;
+  }
+  figure .fig1 {
+    bottom: -240px;
+  }
+  figure .fig2 {
+    bottom: -495px;
+  }
+  figure .fig3 {
+    bottom: -440px;
+  }
 }
