@@ -45,13 +45,13 @@ figure figcaption {
   transition: 0.25s;
 }
 figure .fig1 {
-  bottom: -240px;
+  bottom: -187px;
 }
 figure .fig2 {
   bottom: -380px;
 }
 figure .fig3 {
-  bottom: -380px;
+  bottom: -302px;
 }
 figure figcaption h3 {
   margin: 10px;
@@ -87,12 +87,12 @@ figure figcaption a {
     width: 85%;
   }
   figure .fig1 {
-    bottom: -270px;
+    bottom: -210px;
   }
   figure .fig2 {
-    bottom: -575px;
+    bottom: -440px;
   }
   figure .fig3 {
-    bottom: -520px;
+    bottom: -360px;
   }
 }
