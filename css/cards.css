@@ -42,7 +42,6 @@ figure figcaption {
   background-color: rgba(0, 0, 0, 0.85);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   color: white;
-  line-height: 1;
   transition: 0.25s;
 }
 figure .fig1 {
@@ -59,9 +58,12 @@ figure figcaption h3 {
   padding: 0;
 }
 figure figcaption p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: justify;
   margin: 10px;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.2;
 }
 figure figcaption a {
   position: relative;
