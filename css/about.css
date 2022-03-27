@@ -1,12 +1,11 @@
 #about_section {
   background-color: var(--background_color);
-  transition: background-color 1s;
+  transition: background-color 0.6s ease;
 }
 
 .about_end {
   background-color: var(--light_gray);
-
-  transition: background-color 1s;
+  transition: background-color 0.6s ease;
 }
 
 #about_section .content {
@@ -37,13 +36,15 @@
 }
 
 #about_section .section_title {
-  color: var(--invert_text_color);
+  color: var(--text_color);
+  transition: color 0.6s ease;
 }
 
 #about_section .about_content .p_1 {
   font-family: calibre_regular;
   font-size: 20px;
-  color: var(--invert_text_color);
+  color: var(--text_color);
+  transition: color 0.6s ease;
   line-height: 1.3;
 }
 
@@ -59,7 +60,7 @@
   width: clamp(250px, 35vw, 380px);
   opacity: 1;
   transform: translateY(0px);
-  transition: clip-path 1s ease-in-out;
+  transition: clip-path 0.6s ease-in-out;
 }
 
 @media screen and (max-width: 800px) {
@@ -69,11 +70,12 @@
 }
 
 #about_section .link {
-  color: var(--dark_blue);
+  color: var(--links);
+  transition: color 0.6s ease;
 }
 
 #about_section .link::before {
-  background-color: var(--dark_blue);
+  background-color: var(--links);
 }
 
 #about_section .typing {

@@ -5,12 +5,10 @@
   width: 100vw;
   max-width: 100%;
   background: var(--particles-background);
-  transition: background-color 1s;
 }
 
 .home_end {
   background: var(--particles-end);
-  transition: background-color 1s;
 }
 
 #particles {
@@ -34,14 +32,14 @@
   pointer-events: all;
   font-family: raleway_semi_bold;
   font-size: 16px;
-  color: var(--light_blue);
+  color: var(--blue);
 }
 
 #home_section .name {
   pointer-events: all;
   font-family: calibre_semi_bold;
   font-size: clamp(40px, 8vw, 80px);
-  color: var(--white);
+  color: white;
   margin-top: 25px;
 }
 

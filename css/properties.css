@@ -44,43 +44,39 @@
 }
 
 :root {
-  --blue: #312b54;
+  --blue: #131833;
   --light_blue: #5682fc;
-  --fade_light_blue: rgba(86, 177, 252, 0.15);
-  --dark_blue: rgb(50, 95, 131);
-  --very_dark_blue: rgb(17, 41, 68);
+  --fade_light_blue: rgba(37, 84, 122, 0.459);
+  --links: rgb(110, 25, 25);
 
   --light_gray: #8ea9bf;
-  --black_text: #425466;
   --white: #ffffff;
-  --fade_white: rgb(191, 182, 216);
 
   --purple: rgb(53, 52, 102);
-  --dark_purple: #131030;
-  --fade_dark_purple: rgba(26, 16, 48, 0.9);
 
   --background_color: #ffffff;
-  --text_color: #ffffff;
-  --invert_text_color: #312b54;
-  --fade_invert_text_color: rgba(32, 32, 32, 0.76);
+  --text_color: #312b54;
+  --fade_text_color: rgba(28, 28, 51, 0.2);
   --particles-background: radial-gradient(
     ellipse at bottom,
-    #0b1829 0%,
-    #000000 100%
+    var(--light_gray) 0%,
+    #4b5974 100%
   );
-  --particles-end: radial-gradient(ellipse, #0a1827 0%, #03080e 100%);
+  --particles-end: radial-gradient(circle, var(--light_gray) 0%, #4b5974 120%);
+  --menu_hover_color: var(--blue);
 }
 
 body.dark {
   --background_color: #272727;
-  --text_color: #312b54;
-  --invert_text_color: #ffffff;
-  --fade_invert_text_color: rgba(255, 255, 255, 0.342);
+  --text_color: #ffffff;
+  --fade_text_color: rgba(160, 160, 160, 0.2);
   --light_gray: #1a1c1f;
   --particles-background: radial-gradient(
     ellipse at bottom,
     #0b1829 0%,
     #000000 100%
   );
-  --particles-end: radial-gradient(ellipse, #0a1827 0%, #03080e 100%);
+  --particles-end: radial-gradient(circle, #0a1827 0%, #04080e 80%);
+  --links: rgb(83, 167, 235);
+  --menu_hover_color: white;
 }

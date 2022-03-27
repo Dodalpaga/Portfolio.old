@@ -1,16 +1,16 @@
 #projects_section {
   background-color: var(--background_color);
-  transition: background-color 1s;
+  transition: background-color 0.6s ease;
 }
 
 .projects_end {
   background-color: var(--light_gray);
-
-  transition: background-color 1s;
+  transition: background-color 0.6s ease;
 }
 
 #projects_section .section_title {
-  color: var(--invert_text_color);
+  color: var(--text_color);
+  transition: color 0.6s ease;
   margin-bottom: 60px;
 }
 
@@ -72,8 +72,9 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background: var(--dark_purple);
+  background: var(--blue);
   color: var(--white);
+  transition: color 0.6s ease;
   position: relative;
   float: left;
 }
@@ -86,7 +87,7 @@
 
 .wrapper .inside {
   z-index: 9;
-  background: var(--dark_purple);
+  background: var(--blue);
   width: 140px;
   height: 140px;
   position: absolute;
@@ -100,7 +101,8 @@
   position: absolute;
   right: 85px;
   top: 85px;
-  color: var(--white);
+  color: white;
+  transition: color 0.6s ease;
   opacity: 1;
 }
 .wrapper .inside:hover {
@@ -132,7 +134,8 @@
   width: 100%;
 }
 .wrapper .inside .contents {
-  color: var(--white);
+  color: white;
+  transition: color 0.6s ease;
 }
 .wrapper .inside .contents p {
   font-size: 13px;

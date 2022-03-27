@@ -7,7 +7,7 @@
   z-index: 100;
   width: clamp(0px, 100%, 400px);
   height: 100%;
-  background-color: var(--dark_purple);
+  background-color: var(--blue);
   right: 0px;
   transform: translateX(clamp(0px, 100%, 400px));
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -20,7 +20,7 @@
   right: 10px;
   padding: 20px 20px 20px 20px;
   cursor: pointer;
-  stroke: var(--white);
+  stroke: white;
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -29,7 +29,7 @@
 }
 
 #menu_div .menu_icon:hover {
-  stroke: var(--light_blue);
+  stroke: var(--blue);
 }
 
 #menu_div .menu ol {
@@ -50,7 +50,7 @@
   padding: 15px 22.5px;
   font-family: raleway_semi_bold;
   font-size: 20px;
-  color: var(--white);
+  color: white;
   text-decoration: none;
 }
 
@@ -59,19 +59,19 @@
 }
 
 #menu_div .menu .not_button:hover {
-  color: var(--light_blue);
+  color: var(--blue);
 }
 
 #menu_div .menu .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--light_blue);
+  color: var(--blue);
   padding: 13.5px 30px 13.5px 34.5px;
 }
 
 #menu_div .menu .button p {
-  color: var(--light_blue);
+  color: var(--blue);
 }
 
 #menu_div .menu .button .button_arrow {

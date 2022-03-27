@@ -1,6 +1,6 @@
 #contact_section {
   background-color: var(--background_color);
-  transition: background-color 1s;
+  transition: background-color 0.6s ease;
 }
 
 #contact_section .content.leaning {
@@ -9,7 +9,8 @@
 }
 
 #contact_section .section_title {
-  color: var(--invert_text_color);
+  color: var(--text_color);
+  transition: color 0.6s ease;
   margin-bottom: 70px;
 }
 
@@ -39,11 +40,11 @@
   justify-content: center;
   padding: 25px 10px 25px 25px;
   border-radius: 20px;
-  background-color: background_color;
-  filter: drop-shadow(0px 0px 10px rgba(28, 28, 51, 0.2));
+  background-color: var(--background_color);
+  filter: drop-shadow(0px 0px 10px var(--fade_text_color));
   gap: 15px;
   text-decoration: none;
-  transition: padding 0.5s ease-in-out;
+  transition: background-color 0.6s ease, padding 0.5s ease-in-out;
 }
 
 #contact_section .social_link:hover {
@@ -67,7 +68,8 @@
 #contact_section .social_link .social_text span {
   font-family: proxima_nova_semi_bold;
   font-size: 20px;
-  color: var(--invert_text_color);
+  color: var(--text_color);
+  transition: color 0.6s ease;
   white-space: nowrap;
 }
 

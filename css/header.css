@@ -69,7 +69,8 @@
   padding: 10px 15px;
   font-family: raleway_semi_bold;
   font-size: 15px;
-  color: var(--white);
+  color: white;
+  transition: color 0.6s ease;
   text-decoration: none;
 }
 
@@ -78,14 +79,16 @@
 }
 
 #header .menu .not_button:hover {
-  color: var(--light_blue);
+  color: var(--menu_hover_color);
+  transition: color 0.3s ease;
 }
 
 #header .menu .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--light_blue);
+  color: var(--menu_hover_color);
+  transition: color 0.3s ease;
   padding: 9px 20px 9px 23px;
 }
 
@@ -101,7 +104,7 @@
   padding: 20px 20px 20px 20px;
   margin-right: -20px;
   cursor: pointer;
-  stroke: var(--white);
+  stroke: white;
   stroke-width: 10px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -110,7 +113,7 @@
 }
 
 #header .menu_icon:hover {
-  stroke: var(--light_blue);
+  stroke: var(--menu_hover_color);
 }
 
 #header .in_animation {

@@ -75,11 +75,10 @@ function header_events() {
       document.querySelector("#header_div").style.pointerEvents = "all";
 
       if (navigator.userAgent.indexOf("Firefox") > 0)
-        document.querySelector("#header").style.backgroundColor =
-          "var(--dark_purple)";
+        document.querySelector("#header").style.backgroundColor = "var(--blue)";
       else
         document.querySelector("#header").style.backgroundColor =
-          "var(--fade_dark_purple)";
+          "var(--fade_light_blue)";
 
       document.querySelector("#header").style.backdropFilter = "blur(8px)";
       document.querySelector("#header").style.webkitBackdropFilter =

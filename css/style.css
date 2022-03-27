@@ -80,12 +80,12 @@ ol {
 .link {
   display: inline-block;
   position: relative;
-  color: var(--light_blue);
+  color: red;
   text-decoration: none;
 }
 
 .link:hover {
-  color: var(--light_blue);
+  color: var(--blue);
 }
 
 .link::before {
@@ -96,7 +96,7 @@ ol {
   height: 1px;
   top: 75%;
   left: 0;
-  background-color: var(--light_blue);
+  background-color: var(--blue);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -110,15 +110,20 @@ ol {
   justify-content: center;
   align-items: center;
   pointer-events: all;
-  border: 2px solid var(--light_blue);
+  border: 2px solid var(--blue);
   padding: 15px 35px 15px 40px;
   border-radius: 40px;
   font-family: raleway_semi_bold;
   font-size: 16px;
-  color: var(--light_blue);
+  color: var(--blue);
   text-decoration: none;
   background-color: none;
   transition: background-color 0.3s ease;
+}
+
+.button p {
+  color: white;
+  transition: color 0.3s ease;
 }
 
 .button:hover {
@@ -129,10 +134,14 @@ ol {
   height: 13px;
   margin-left: 15px;
   fill: none;
-  stroke: var(--light_blue);
+  stroke: var(--menu_hover_color);
   stroke-width: 3px;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.button:hover .button_arrow {
+  stroke: white;
 }
 
 .button .button_arrow .path_1,
