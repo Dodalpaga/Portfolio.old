@@ -15,6 +15,13 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <script src="libraries/particlesjs/particles.js"></script>
 
@@ -27,6 +34,7 @@
     <script src="js/terminal.js" type="module"></script>
     <script src="js/typing.js" type="module"></script>
     <script src="js/scrollbar.js" type="text/javascript"></script>
+    <script src="js/darkmode.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/properties.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -40,10 +48,10 @@
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/cards.css" />
-    <link rel="stylesheet" type="text/css" href="css/cards_V2.css" />
     <link rel="stylesheet" type="text/css" href="css/resume.css" />
+    <link rel="stylesheet" type="text/css" href="css/darkmode.css" />
   </head>
-  <body>
+  <body style="transition: background-color 1s">
     <div id="header_div">
       <header id="header">
         <nav class="nav">
@@ -152,6 +160,7 @@
         </section>
         <div class="section_end home_end"></div>
         <br /><br />
+
         <a id="about"></a>
         <section class="section" id="about_section">
           <div class="content">
@@ -190,7 +199,7 @@
               style="
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: larger;
-                color: var(--black_text);
+                color: var(--invert_text_color);
               "
               ><b>Web & Design</b></span
             ><br />
@@ -275,7 +284,7 @@
               style="
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: larger;
-                color: var(--black_text);
+                color: var(--invert_text_color);
               "
               ><b>Programming</b></span
             ><br />
@@ -359,7 +368,7 @@
                   class="skills_link"
                   href="https://fr.mathworks.com/products/matlab.html"
                   target="_blank"
-                  style="--size: 50px"
+                  style="--size: 60px"
                 >
                   <img src="resources/shapes/skills/matlab.svg" />
                   <div class="skills_text">
@@ -371,7 +380,7 @@
                   class="skills_link"
                   href="https://fr.mathworks.com/products/simulink.html"
                   target="_blank"
-                  style="--size: 50px"
+                  style="--size: 80px"
                 >
                   <img src="resources/shapes/skills/Simulink_Logo.svg" />
                   <div class="skills_text">
@@ -397,7 +406,7 @@
               style="
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: larger;
-                color: var(--black_text);
+                color: var(--invert_text_color);
               "
               ><b>Frameworks</b></span
             ><br />
@@ -470,7 +479,7 @@
               style="
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: larger;
-                color: var(--black_text);
+                color: var(--invert_text_color);
               "
               ><b>Electronics</b></span
             ><br />
@@ -899,9 +908,16 @@
             </div>
           </div>
         </section>
+
         <a href="resources/Resume.pdf">
           <button class="button-49" role="button">RESUME</button></a
         >
+
+        <button
+          id="darkmode-toggler"
+          class="fas fa-moon"
+          onclick="toggle_darkmode()"
+        ></button>
 
         <footer class="section" id="footer_section">
           <div class="content">

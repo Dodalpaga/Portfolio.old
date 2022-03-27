@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+#darkmode-toggler {
+  position: fixed;
+  bottom: 15px;
+  left: 25px;
+  padding: 15px 20px;
+  font-size: 30px;
+  background: var(--background_color);
+  color: var(--invert_text_color);
+  cursor: pointer;
+  box-shadow: 0 5px 10px var(--fade_invert_text_color);
+  border-radius: 5px;
+}

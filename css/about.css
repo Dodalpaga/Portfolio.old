@@ -1,5 +1,6 @@
 #about_section {
   background-color: var(--background_color);
+  transition: background-color 1s;
 }
 
 .about_end {
@@ -34,13 +35,13 @@
 }
 
 #about_section .section_title {
-  color: var(--blue);
+  color: var(--invert_text_color);
 }
 
 #about_section .about_content .p_1 {
   font-family: calibre_regular;
   font-size: 20px;
-  color: var(--black_text);
+  color: var(--invert_text_color);
   line-height: 1.3;
 }
 

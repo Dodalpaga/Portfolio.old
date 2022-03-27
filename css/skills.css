@@ -1,5 +1,6 @@
 #skills_section {
   background-color: var(--background_color);
+  transition: background-color 1s;
 }
 
 .skills_end {
@@ -12,7 +13,7 @@
 }
 
 #skills_section .section_title {
-  color: var(--blue);
+  color: var(--invert_text_color);
   margin-bottom: 70px;
 }
 
@@ -70,7 +71,7 @@
 #skills_section .skills_link .skills_text span {
   font-family: proxima_nova_semi_bold;
   font-size: 20px;
-  color: var(--black_text);
+  color: var(--invert_text_color);
   white-space: nowrap;
 }
 

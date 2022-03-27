@@ -43,7 +43,7 @@
   src: url("../resources/fonts/proxima_nova/ProximaNovaSemibold.otf");
 }
 
-body {
+:root {
   --blue: #312b54;
   --light_blue: #5682fc;
   --fade_light_blue: rgba(86, 177, 252, 0.15);
@@ -60,4 +60,15 @@ body {
   --fade_dark_purple: rgba(26, 16, 48, 0.9);
 
   --background_color: #ffffff;
+  --text_color: #ffffff;
+  --invert_text_color: #312b54;
+  --fade_invert_text_color: rgba(32, 32, 32, 0.76);
+}
+
+body.dark {
+  --background_color: #272727;
+  --text_color: #312b54;
+  --invert_text_color: #ffffff;
+  --fade_invert_text_color: rgba(255, 255, 255, 0.342);
+  --light_gray: #1a1c1f;
 }

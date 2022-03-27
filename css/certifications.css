@@ -1,9 +1,10 @@
 #certifications_section {
-  background-color: var(--purple);
+  background-color: var(--background_color);
+  transition: background-color 1s;
 }
 
 .certifications_end {
-  background-color: var(--dark_purple);
+  background-color: var(--light_gray);
 }
 
 #certifications_section .content.leaning {
@@ -12,7 +13,7 @@
 }
 
 #certifications_section .section_title {
-  color: var(--white);
+  color: var(--invert_text_color);
   margin-bottom: 60px;
 }
 
