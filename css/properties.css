@@ -44,29 +44,28 @@
 }
 
 :root {
+  /* Main-colors */
   --blue: #131833;
   --light_blue: #5682fc;
   --fade_light_blue: rgba(37, 84, 122, 0.459);
-  --links: rgb(110, 25, 25);
 
-  --light_gray: #8ea9bf;
-  --white: #ffffff;
-
-  --purple: rgb(53, 52, 102);
-
+  /* Lightmode */
   --background_color: #ffffff;
   --text_color: #312b54;
   --fade_text_color: rgba(28, 28, 51, 0.2);
+  --light_gray: #8ea9bf;
   --particles-background: radial-gradient(
     ellipse at bottom,
     var(--light_gray) 0%,
     #4b5974 100%
   );
   --particles-end: radial-gradient(circle, var(--light_gray) 0%, #4b5974 120%);
+  --links: rgb(110, 25, 25);
   --menu_hover_color: var(--blue);
 }
 
 body.dark {
+  /* Darkmode */
   --background_color: #272727;
   --text_color: #ffffff;
   --fade_text_color: rgba(160, 160, 160, 0.2);

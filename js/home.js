@@ -30,7 +30,7 @@ function home_in_animations() {
 
 function home_events() {
   let particles_paused = false;
-  particlesJS.load("particles", "libraries/particlesjs/particles.json");
+  particlesJS.load("particles", "js/particlesjs/particles.json");
 
   window.addEventListener("scroll", (e) => {
     if (
