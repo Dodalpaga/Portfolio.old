@@ -1,5 +1,5 @@
 #skills_section {
-  background-color: var(--white);
+  background-color: var(--background_color);
 }
 
 .skills_end {
@@ -42,7 +42,7 @@
   justify-content: center;
   padding: 25px 10px 25px 25px;
   border-radius: 20px;
-  background-color: white;
+  background-color: background_color;
   filter: drop-shadow(0px 0px 10px rgba(28, 28, 51, 0.2));
   gap: 15px;
   text-decoration: none;

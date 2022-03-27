@@ -6,7 +6,6 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: var(--background_color);
 }
 
 body {
@@ -14,6 +13,7 @@ body {
   overflow-x: hidden;
   position: relative;
   width: 100%;
+  background-color: var(--background_color);
 }
 
 ol {
