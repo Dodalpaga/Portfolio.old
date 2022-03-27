@@ -5,6 +5,8 @@
 
 .projects_end {
   background-color: var(--light_gray);
+
+  transition: background-color 1s;
 }
 
 #projects_section .section_title {

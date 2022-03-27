@@ -2,11 +2,14 @@
 
 #darkmode-toggler {
   position: fixed;
+  z-index: 9999;
   bottom: 15px;
   left: 25px;
   padding: 15px 20px;
   font-size: 30px;
   background: var(--background_color);
+
+  transition: background-color 1s;
   color: var(--invert_text_color);
   cursor: pointer;
   box-shadow: 0 5px 10px var(--fade_invert_text_color);

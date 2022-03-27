@@ -63,6 +63,12 @@
   --text_color: #ffffff;
   --invert_text_color: #312b54;
   --fade_invert_text_color: rgba(32, 32, 32, 0.76);
+  --particles-background: radial-gradient(
+    ellipse at bottom,
+    #0b1829 0%,
+    #000000 100%
+  );
+  --particles-end: radial-gradient(ellipse, #0a1827 0%, #03080e 100%);
 }
 
 body.dark {
@@ -71,4 +77,10 @@ body.dark {
   --invert_text_color: #ffffff;
   --fade_invert_text_color: rgba(255, 255, 255, 0.342);
   --light_gray: #1a1c1f;
+  --particles-background: radial-gradient(
+    ellipse at bottom,
+    #0b1829 0%,
+    #000000 100%
+  );
+  --particles-end: radial-gradient(ellipse, #0a1827 0%, #03080e 100%);
 }

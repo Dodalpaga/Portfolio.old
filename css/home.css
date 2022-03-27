@@ -4,11 +4,13 @@
   height: 100vh;
   width: 100vw;
   max-width: 100%;
-  background: radial-gradient(ellipse at bottom, #0b1829 0%, #000000 100%);
+  background: var(--particles-background);
+  transition: background-color 1s;
 }
 
 .home_end {
-  background: radial-gradient(ellipse, #0a1827 0%, #03080e 100%);
+  background: var(--particles-end);
+  transition: background-color 1s;
 }
 
 #particles {

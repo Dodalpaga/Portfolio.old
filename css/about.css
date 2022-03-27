@@ -5,6 +5,8 @@
 
 .about_end {
   background-color: var(--light_gray);
+
+  transition: background-color 1s;
 }
 
 #about_section .content {
