@@ -7,7 +7,7 @@
   z-index: 100;
   width: clamp(0px, 100%, 400px);
   height: 100%;
-  background-color: var(--dark_blue);
+  background-color: var(--dark_purple);
   right: 0px;
   transform: translateX(clamp(0px, 100%, 400px));
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -71,7 +71,7 @@
 }
 
 #menu_div .menu .button p {
-  color: var(--light_green);
+  color: var(--light_blue);
 }
 
 #menu_div .menu .button .button_arrow {

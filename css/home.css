@@ -7,6 +7,11 @@
   background: radial-gradient(ellipse at bottom, #0b1829 0%, #000000 100%);
 }
 
+.home_end {
+  background-color: blue;
+  background: radial-gradient(ellipse, #0a1827 0%, #03080e 100%);
+}
+
 #particles {
   position: absolute;
   z-index: 1;

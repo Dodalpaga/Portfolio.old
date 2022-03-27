@@ -11,7 +11,7 @@
   border: 0;
   color: #fff;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px var(--light_green);
+  box-shadow: 6px 0px 0px var(--light_blue);
   outline: transparent;
   position: relative;
   user-select: none;
@@ -39,11 +39,11 @@
   background: linear-gradient(
     45deg,
     transparent 3%,
-    var(--light_green) 3%,
-    var(--light_green) 5%,
+    var(--light_blue) 3%,
+    var(--light_blue) 5%,
     var(--purple) 5%
   );
-  text-shadow: -3px -3px 0px #5f5f5f, 3px 3px 0px var(--fade_dark_blue);
+  text-shadow: -3px -3px 0px #5f5f5f, 3px 3px 0px var(--fade_dark_purple);
   clip-path: var(--slice-0);
 }
 

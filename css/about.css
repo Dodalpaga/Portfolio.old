@@ -66,11 +66,11 @@
 }
 
 #about_section .link {
-  color: var(--dark_green);
+  color: var(--dark_blue);
 }
 
 #about_section .link::before {
-  background-color: var(--dark_green);
+  background-color: var(--dark_blue);
 }
 
 #about_section .typing {

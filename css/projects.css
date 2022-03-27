@@ -1,9 +1,9 @@
 #projects_section {
-  background-color: var(--dark_green);
+  background-color: var(--dark_blue);
 }
 
 .projects_end {
-  background-color: var(--very_dark_green);
+  background-color: var(--very_dark_blue);
 }
 
 #projects_section .section_title {
@@ -69,7 +69,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background: var(--dark_blue);
+  background: var(--dark_purple);
   color: var(--white);
   position: relative;
   float: left;
@@ -83,7 +83,7 @@
 
 .wrapper .inside {
   z-index: 9;
-  background: var(--dark_blue);
+  background: var(--dark_purple);
   width: 140px;
   height: 140px;
   position: absolute;

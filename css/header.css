@@ -78,14 +78,14 @@
 }
 
 #header .menu .not_button:hover {
-  color: var(--light_green);
+  color: var(--light_blue);
 }
 
 #header .menu .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--light_green);
+  color: var(--light_blue);
   padding: 9px 20px 9px 23px;
 }
 
@@ -110,7 +110,7 @@
 }
 
 #header .menu_icon:hover {
-  stroke: var(--light_green);
+  stroke: var(--light_blue);
 }
 
 #header .in_animation {

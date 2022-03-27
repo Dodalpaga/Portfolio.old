@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: var(--background_color);
 }
 
 body {
@@ -79,12 +80,12 @@ ol {
 .link {
   display: inline-block;
   position: relative;
-  color: var(--light_green);
+  color: var(--light_blue);
   text-decoration: none;
 }
 
 .link:hover {
-  color: var(--light_green);
+  color: var(--light_blue);
 }
 
 .link::before {
@@ -95,7 +96,7 @@ ol {
   height: 1px;
   top: 75%;
   left: 0;
-  background-color: var(--light_green);
+  background-color: var(--light_blue);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -109,26 +110,26 @@ ol {
   justify-content: center;
   align-items: center;
   pointer-events: all;
-  border: 2px solid var(--light_green);
+  border: 2px solid var(--light_blue);
   padding: 15px 35px 15px 40px;
   border-radius: 40px;
   font-family: raleway_semi_bold;
   font-size: 16px;
-  color: var(--light_green);
+  color: var(--light_blue);
   text-decoration: none;
   background-color: none;
   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: var(--fade_light_green);
+  background-color: var(--fade_light_blue);
 }
 
 .button .button_arrow {
   height: 13px;
   margin-left: 15px;
   fill: none;
-  stroke: var(--light_green);
+  stroke: var(--light_blue);
   stroke-width: 3px;
   stroke-linecap: round;
   stroke-linejoin: round;
