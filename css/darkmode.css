@@ -2,7 +2,7 @@
 
 #darkmode-toggler {
   position: fixed;
-  z-index: 9999;
+  z-index: 200;
   bottom: 15px;
   left: 25px;
   padding: 15px 20px;

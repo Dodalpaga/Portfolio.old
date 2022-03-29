@@ -35,17 +35,17 @@ function init_terminal(id, model_gltf) {
   var controls = new OrbitControls(camera, renderer.domElement);
   controls.maxDistance = controls.minDistance = 60;
   controls.enablePan = false; // Empêche le déplacement en translation du terminal (clic-droit)
-  controls.enableRotate = false; // Permet la rotation du terminal (clic-gauche)
+  controls.enableRotate = true; // Permet la rotation du terminal (clic-gauche)
   controls.enableZoom = false; // Empêche le scrolling sur le canva !!!
 
   controls.autoRotate = true; // Permet la rotation par lui-même
-  controls.autoRotateSpeed = 5; // Paramètre de vitesse de rotation par défaut
+  controls.autoRotateSpeed = 2; // Paramètre de vitesse de rotation par défaut
 
   controls.minPolarAngle = Math.PI / 2; // Bloquage de DDL
   controls.maxPolarAngle = Math.PI / 2; // Bloquage de DDL
 
   controls.enableDamping = true; // Arrêt / Inrtie "smooth"
-  controls.dampingFactor = 0.12; // Paramètre d'inertie
+  controls.dampingFactor = 0.05; // Paramètre d'inertie
 
   /* 
   Setting up lights
@@ -84,4 +84,4 @@ function init_terminal(id, model_gltf) {
   });
 }
 
-init_terminal("terminal", "./model/Terminal-2.gltf");
+init_terminal("terminal", "./resources/model/Terminal-2.gltf");
