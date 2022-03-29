@@ -51,7 +51,9 @@
 
   /* Lightmode */
   --background_color: #ffffff;
+  --fade_background_color: #fffffff5;
   --text_color: #312b54;
+  --box_shadow: #312b5449;
   --fade_text_color: rgba(28, 28, 51, 0.2);
   --light_gray: #8ea9bf;
   --particles-background: radial-gradient(
@@ -67,7 +69,9 @@
 body.dark {
   /* Darkmode */
   --background_color: #272727;
+  --fade_background_color: #272727f5;
   --text_color: #ffffff;
+  --box_shadow: #ffffff25;
   --fade_text_color: rgba(160, 160, 160, 0.2);
   --light_gray: #1a1c1f;
   --particles-background: radial-gradient(

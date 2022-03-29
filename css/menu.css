@@ -10,7 +10,7 @@
   background-color: var(--blue);
   right: 0px;
   transform: translateX(clamp(0px, 100%, 400px));
-  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
 }
 
 #menu_div .menu_icon {
