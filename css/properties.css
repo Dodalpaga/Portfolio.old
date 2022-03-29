@@ -49,24 +49,6 @@
   --light_blue: #5682fc;
   --fade_light_blue: rgba(37, 84, 122, 0.459);
 
-  /* Lightmode */
-  --background_color: #ffffff;
-  --fade_background_color: #fffffff5;
-  --text_color: #312b54;
-  --box_shadow: #312b5449;
-  --fade_text_color: rgba(28, 28, 51, 0.2);
-  --light_gray: #8ea9bf;
-  --particles-background: radial-gradient(
-    ellipse at bottom,
-    var(--light_gray) 0%,
-    #4b5974 100%
-  );
-  --particles-end: radial-gradient(circle, var(--light_gray) 0%, #4b5974 120%);
-  --links: rgb(110, 25, 25);
-  --menu_hover_color: var(--blue);
-}
-
-body.dark {
   /* Darkmode */
   --background_color: #272727;
   --fade_background_color: #272727f5;
@@ -82,4 +64,22 @@ body.dark {
   --particles-end: radial-gradient(circle, #0a1827 0%, #04080e 80%);
   --links: rgb(83, 167, 235);
   --menu_hover_color: white;
+}
+
+body.light {
+  /* Lightmode */
+  --background_color: #ffffff;
+  --fade_background_color: #fffffff5;
+  --text_color: #312b54;
+  --box_shadow: #312b5449;
+  --fade_text_color: rgba(28, 28, 51, 0.2);
+  --light_gray: #8ea9bf;
+  --particles-background: radial-gradient(
+    ellipse at bottom,
+    var(--light_gray) 0%,
+    #4b5974 100%
+  );
+  --particles-end: radial-gradient(circle, var(--light_gray) 0%, #4b5974 120%);
+  --links: rgb(110, 25, 25);
+  --menu_hover_color: var(--blue);
 }
