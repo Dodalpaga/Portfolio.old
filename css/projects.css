@@ -94,7 +94,7 @@
   top: -70px;
   right: -70px;
   border-radius: 0px 0px 200px 200px;
-  transition: all 0.6s, border-radius 2s, top 1s, backgorund-color 0.6s;
+  transition: all 0.6s, border-radius 1.2s, top 1s, backgorund-color 0.6s;
   overflow: hidden;
 }
 .wrapper .inside .icon {
@@ -118,7 +118,11 @@
   top: 15px;
 }
 .wrapper .inside:hover .contents {
+  visibility: visible;
   opacity: 1;
+  transition: opacity 0.6s linear;
+  transition-delay: 0.6s;
+  transition-property: opacity;
   transform: scale(1);
   transform: translateY(0);
 }
@@ -129,7 +133,9 @@
   transform: translateY(-200%);
   transition: opacity 0.2s, transform 0.6s;
 }
-.wrapper .inside .contents table {
+.wrapper .inside .contents a {
+  color: var(--text_color);
+  font-weight: bold;
   text-align: left;
   width: 100%;
 }
