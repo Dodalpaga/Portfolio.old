@@ -59,19 +59,19 @@
 }
 
 #menu_div .menu .not_button:hover {
-  color: var(--blue);
+  color: var(--text_color);
 }
 
 #menu_div .menu .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--blue);
+  color: var(--text_color);
   padding: 13.5px 30px 13.5px 34.5px;
 }
 
 #menu_div .menu .button p {
-  color: var(--blue);
+  color: var(--text_color);
 }
 
 #menu_div .menu .button .button_arrow {
