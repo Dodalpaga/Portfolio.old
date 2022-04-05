@@ -66,28 +66,3 @@
 #home_section .home_button {
   margin-top: 50px;
 }
-
-#terminal {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-@media screen and (max-width: 1400px) {
-  .terminal {
-    width: 70%;
-  }
-}
-@media screen and (max-width: 1150px) {
-  .terminal {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .terminal {
-    display: none;
-  }
-}

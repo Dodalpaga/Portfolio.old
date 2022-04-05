@@ -26,8 +26,8 @@ function init() {
   controls = new OrbitControls(camera, renderer.domElement);
   controls.maxDistance = controls.minDistance = 250;
 
-  controls.enablePan = false; // Empêche le déplacement en translation du terminal (clic-droit)
-  controls.enableRotate = true; // Permet la rotation du terminal (clic-gauche)
+  controls.enablePan = false; // Empêche le déplacement en translation du modèle (clic-droit)
+  controls.enableRotate = true; // Permet la rotation du modèle (clic-gauche)
   controls.enableZoom = false; // Empêche le scrolling sur le canva !!!
 
   controls.autoRotate = true;

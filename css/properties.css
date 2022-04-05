@@ -43,7 +43,7 @@
   src: url("../resources/fonts/proxima_nova/ProximaNovaSemibold.otf");
 }
 
-:root {
+body {
   /* Main-colors */
   --blue: #131833;
   --light_blue: #5682fc;
