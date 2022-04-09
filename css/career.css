@@ -1,0 +1,141 @@
+#career_section {
+  background-color: var(--background_color);
+  transition: background-color 0.6s ease;
+  height: 100%;
+}
+
+.career_end {
+  background-color: var(--light_gray);
+  transition: background-color 0.6s ease;
+}
+
+#career_section .content.leaning {
+  margin: 30 px 30 px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+#career_section .section_title {
+  color: var(--text_color);
+  transition: color 0.6s ease;
+  margin-bottom: 70px;
+}
+
+#career_section .career_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#career_section .social_line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#career_section .social_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 10px 25px 25px;
+  border-radius: 20px;
+  background-color: var(--background_color);
+  filter: drop-shadow(0px 0px 10px var(--fade_text_color));
+  gap: 15px;
+  text-decoration: none;
+  transition: background-color 0.6s ease, padding 0.6s ease-in-out;
+}
+
+#career_section .social_link:hover {
+  padding-right: 25px;
+}
+
+#career_section .social_link img {
+  width: 50px;
+}
+
+#career_section .social_link .social_text {
+  overflow: hidden;
+  width: 0px;
+  transition: width 0.6s ease-in-out;
+}
+
+#career_section .social_link:hover .social_text {
+  width: var(--size);
+}
+
+#career_section .social_link .social_text span {
+  font-family: proxima_nova_semi_bold;
+  font-size: 20px;
+  color: var(--text_color);
+  transition: color 0.6s ease;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 500px) {
+  #career_section .social_link:hover {
+    padding-right: 10px;
+  }
+
+  #career_section .social_link:hover .social_text {
+    width: 0px;
+  }
+}
+
+.uk-timeline .uk-timeline-item .uk-card {
+  max-height: 300px;
+}
+
+.uk-timeline .uk-timeline-item {
+  display: flex;
+  position: relative;
+}
+
+.uk-timeline .uk-timeline-item::before {
+  background: #dadee4;
+  content: "";
+  height: 100%;
+  left: 19px;
+  position: absolute;
+  top: 20px;
+  width: 2px;
+  z-index: -1;
+}
+
+.uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.uk-timeline .uk-timeline-item .uk-timeline-content {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0 0 0 1rem;
+}
+
+.uk-timeline .uk-timeline-item .uk-timeline-content .uk-card .uk-card-header {
+  background-color: var(--background_color);
+  color: var(--text_color);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.uk-timeline .uk-timeline-item .uk-timeline-content .uk-card .uk-card-body {
+  background-color: var(--background_color);
+  color: var(--text_color);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.uk-timeline
+  .uk-timeline-item
+  .uk-timeline-content
+  .uk-card
+  .uk-card-header
+  .uk-card-title {
+  background-color: var(--background_color);
+  color: var(--text_color);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}

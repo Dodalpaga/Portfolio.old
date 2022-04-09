@@ -66,7 +66,10 @@
     <link rel="stylesheet" type="text/css" href="css/cards.css" />
     <link rel="stylesheet" type="text/css" href="css/resume.css" />
     <link rel="stylesheet" type="text/css" href="css/darkmode.css" />
-    <link rel="stylesheet" type="text/css" href="css/level.css" />
+    <link rel="stylesheet" type="text/css" href="css/career.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
   </head>
 
   <body id="body" style="transition: background-color 0.6s ease">
@@ -88,6 +91,9 @@
               </li>
               <li class="skills in_animation">
                 <a class="not_button" href="#skills">Skills</a>
+              </li>
+              <li class="career in_animation">
+                <a class="not_button" href="#career">Career</a>
               </li>
               <li class="projects in_animation">
                 <a class="not_button" href="#projects">Projects</a>
@@ -140,6 +146,9 @@
           <li class="about"><a class="not_button" href="#about">About</a></li>
           <li class="skills">
             <a class="not_button" href="#skills">Skills</a>
+          </li>
+          <li class="career">
+            <a class="not_button" href="#career">Career</a>
           </li>
           <li class="projects">
             <a class="not_button" href="#projects">Projects</a>
@@ -515,26 +524,180 @@
         <br />
         <div class="section_end skills_end"></div>
 
-        <a id="Career Path"></a>
-        <section class="section" id="level_section">
+        <a id="career"></a>
+        <section class="section" id="career_section">
           <div class="content leaning">
             <span class="section_title">Career Path</span>
-            <div class="level_content">
-              <canvas id="myChart" style="width: 100%; height: 300px"></canvas>
-              <script src="js/graph.js"></script>
+            <div class="career_content">
+              <!-- <canvas id="myChart"></canvas>
+              <script src="js/graph.js"></script> -->
+              <div class="career_text">
+                <div
+                  style="
+                    color: var(--text_color);
+                    transition: color 0.6s ease-in-out;
+                  "
+                >
+                  <span
+                    class="uk-margin-small-right"
+                    uk-icon="triangle-up"
+                  ></span
+                  >More to come ...
+                </div>
+                <div class="uk-container uk-padding">
+                  <div class="uk-timeline">
+                    <div class="uk-timeline-item">
+                      <div class="uk-timeline-icon">
+                        <span
+                          class="uk-badge"
+                          style="background-color: rgb(47, 120, 255)"
+                          ><span uk-icon="more"></span
+                        ></span>
+                      </div>
+                      <div class="uk-timeline-content">
+                        <div
+                          class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
+                        >
+                          <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                              <h3 class="uk-card-title">
+                                <div>
+                                  September 2021 - Now : Embedded Artificial
+                                  Intelligence Developer
+                                </div>
+                              </h3>
+                              <span
+                                style="background-color: rgb(47, 120, 255)"
+                                class="uk-label uk-margin-auto-left"
+                                >Atos</span
+                              >
+                            </div>
+                          </div>
+                          <div class="uk-card-body">
+                            <p>
+                              Working as an Embedded Artificial Intelligence
+                              Developer, i work on predictive maintainance of
+                              the company's manufacturing process on 3D
+                              printing. Making of artificial intelligence models
+                              for industry including : <br />
+                              - Development/modification of instrumentation as
+                              needed <br />
+                              - Framing data needs and carrying out
+                              experimentation campaigns<br />
+                              - Analysis and structuring of data<br />
+                              - AI models architecture<br />
+                              - Training AI models<br />
+                              - Deployment of models on target<br />
+                              - Operational validation of results<br />
+                              - Documentation and communication Getting involved
+                              in Innolab's technological watch around AI
+                              subjects by sharing knowledge of new Frameworks,
+                              languages, etc. within the team",
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-timeline-item">
+                      <div class="uk-timeline-icon">
+                        <span
+                          class="uk-badge"
+                          style="background-color: rgb(237, 143, 56)"
+                          ><span uk-icon="check"></span
+                        ></span>
+                      </div>
+                      <div class="uk-timeline-content">
+                        <div
+                          class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
+                        >
+                          <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                              <h3 class="uk-card-title">
+                                <div>
+                                  February 2021 - October 2021 : Designer /
+                                  Software Developer
+                                </div>
+                              </h3>
+                              <span
+                                style="background-color: rgb(237, 143, 56)"
+                                class="uk-label uk-margin-auto-left"
+                                >eXcent</span
+                              >
+                            </div>
+                          </div>
+                          <div class="uk-card-body">
+                            <p>
+                              Second internship as a mechanical designer in a
+                              design office. I also helped develop program and
+                              tools on machining tools for metallurgy industry
+                              :<br />
+                              - Part of the pre-project team, drawing up offers
+                              to answer to a call for tender : proposing
+                              solutions, illustrated with designs/concepts
+                              (CAD). <br />
+                              - Working in relation with various french and
+                              international industrials (such as Dassault,
+                              Ariane, AD&S) <br />
+                              - Working in 'Project Mode' : Taking advantage of
+                              my applied mathematics skills in specific cases
+                              (models, 3D transformations, solving systems,
+                              ...)<br />
+                              - Analysis and optimization
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-timeline-item">
+                      <div class="uk-timeline-icon">
+                        <span class="uk-badge" style="background-color: #705127"
+                          ><span uk-icon="check"></span
+                        ></span>
+                      </div>
+                      <div class="uk-timeline-content">
+                        <div
+                          class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto"
+                        >
+                          <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                              <h3 class="uk-card-title">
+                                <div>
+                                  August 2019 - February 2020 : Assistant
+                                  Software Developer
+                                </div>
+                              </h3>
+                              <span
+                                style="background-color: #705127"
+                                class="uk-label uk-margin-auto-left"
+                                >Louis Vuitton</span
+                              >
+                            </div>
+                          </div>
+                          <div class="uk-card-body">
+                            <p>
+                              First internship in Paris Louis Vuitton's head
+                              office as a developper. I created programming
+                              tools for the mechanical engineering department
+                              :<br />
+                              -Developed and diversified metal parts<br />
+                              -Exchanged in english with international
+                              suppliers<br />
+                              -Set up Specifications and Good Practices<br />
+                              -Established computer tools for developers: PLM
+                              and metal parts testing software using Skylims
+                              (LabWare)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="section_end skills_end"></div>
+        <div class="section_end career_end"></div>
 
         <a id="projects"></a>
         <section class="section" id="projects_section">
@@ -930,6 +1093,14 @@
                 <span>© 2022 Dorian VOYDIE</span>
                 <img src="resources/shapes/license.svg" />
                 <span>MIT license</span>
+              </a>
+              <a
+                class="footer_github"
+                href="https://github.com/Dodalpaga/Porfolio/"
+                target="_blank"
+              >
+                <span>Source Code</span>
+                <img src="resources/shapes/contact/GitHub.svg" />
               </a>
             </div>
           </div>

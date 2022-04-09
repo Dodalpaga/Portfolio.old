@@ -52,9 +52,7 @@ function home_events() {
     }
   });
 
-  let rect = document
-    .querySelector("#home_section .content")
-    .getBoundingClientRect();
+  let rect = document.querySelector("#home_section").getBoundingClientRect();
   document.querySelector("#home_section").style.minHeight =
     rect.height + 90 + "px";
 }

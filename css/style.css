@@ -91,7 +91,7 @@ ol {
 .link::before {
   content: "";
   position: absolute;
-  display: block;
+  display: none;
   width: 100%;
   height: 1px;
   top: 75%;
@@ -125,6 +125,7 @@ ol {
 .button p {
   color: white;
   transition: color 0.6s ease;
+  margin: 0;
 }
 
 .button:hover {

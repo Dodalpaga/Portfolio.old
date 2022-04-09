@@ -85,6 +85,13 @@
   width: 100%;
 }
 
+.wrapper .container .bottom .left .details h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--text_color);
+  transition: color 0.6s ease;
+}
+
 .wrapper .inside {
   z-index: 9;
   background: var(--background_color);
@@ -127,6 +134,8 @@
   transform: translateY(0);
 }
 .wrapper .inside .contents {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 5%;
   opacity: 0;
   transform: scale(0.5);
