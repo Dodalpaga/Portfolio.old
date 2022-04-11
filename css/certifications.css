@@ -41,14 +41,12 @@
 }
 
 #certifications_section .certifications_line h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "calibre_regular";
   color: white;
 }
 
 #certifications_section .certifications_line h3 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "calibre_regular";
   color: var(--text_color);
 }
 
@@ -112,8 +110,7 @@
   padding: 0;
 }
 .image-block .caption p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "calibre_regular";
   text-align: justify;
   margin: 10px;
   font-size: 16px;

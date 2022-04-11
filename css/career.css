@@ -10,6 +10,7 @@
 }
 
 #career_section .content.leaning {
+  display: flex;
   margin: 30 px 30 px;
   margin-right: 10px;
   margin-left: 20px;
@@ -22,120 +23,82 @@
 }
 
 #career_section .career_content {
+  min-width: 300px;
+  max-width: 100%;
+  margin: auto;
+}
+
+#career_section .career_title {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  justify-content: space-between;
 }
 
-#career_section .social_line {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-#career_section .social_link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 10px 25px 25px;
-  border-radius: 20px;
-  background-color: var(--background_color);
-  filter: drop-shadow(0px 0px 10px var(--fade_text_color));
-  gap: 15px;
-  text-decoration: none;
-  transition: background-color 0.6s ease, padding 0.6s ease-in-out;
-}
-
-#career_section .social_link:hover {
-  padding-right: 25px;
-}
-
-#career_section .social_link img {
-  width: 50px;
-}
-
-#career_section .social_link .social_text {
-  overflow: hidden;
-  width: 0px;
-  transition: width 0.6s ease-in-out;
-}
-
-#career_section .social_link:hover .social_text {
-  width: var(--size);
-}
-
-#career_section .social_link .social_text span {
-  font-family: proxima_nova_semi_bold;
-  font-size: 20px;
+.experience {
+  font-family: "calibre_regular";
+  font-size: 1em;
   color: var(--text_color);
   transition: color 0.6s ease;
-  white-space: nowrap;
-}
-
-@media screen and (max-width: 500px) {
-  #career_section .social_link:hover {
-    padding-right: 10px;
-  }
-
-  #career_section .social_link:hover .social_text {
-    width: 0px;
-  }
-}
-
-.uk-timeline .uk-timeline-item .uk-card {
-  max-height: 300px;
-}
-
-.uk-timeline .uk-timeline-item {
-  display: flex;
+  text-align: justify;
+  border-top: 3px solid;
+  -o-border-image: linear-gradient(
+    to right,
+    var(--light_gray) 0%,
+    var(--links) 100%
+  );
+  border-image: linear-gradient(
+    to right,
+    var(--light_gray) 0%,
+    var(--links) 100%
+  );
+  border-image-slice: 1;
+  border-width: 3px;
+  padding: 40px;
+  counter-increment: section;
   position: relative;
 }
-
-.uk-timeline .uk-timeline-item::before {
-  background: #dadee4;
+.experience:before {
   content: "";
-  height: 100%;
-  left: 19px;
+  background-color: var(--light_gray);
+  transition: background-color 0.6s ease;
   position: absolute;
-  top: 20px;
-  width: 2px;
-  z-index: -1;
+  border-radius: 50%;
+  padding: 10px;
+  height: 1.25em;
+  width: 1.25em;
+  text-align: center;
+  line-height: 1.25em;
+  font-size: 1em;
 }
 
-.uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {
-  margin-top: 20px;
-  width: 40px;
-  height: 40px;
+.experience:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+.experience:nth-child(odd):before {
+  left: 100%;
+  margin-left: -20px;
 }
 
-.uk-timeline .uk-timeline-item .uk-timeline-content {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  padding: 0 0 0 1rem;
+.experience:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+.experience:nth-child(even):before {
+  right: 100%;
+  margin-right: -20px;
 }
 
-.uk-timeline .uk-timeline-item .uk-timeline-content .uk-card .uk-card-header {
-  background-color: var(--background_color);
-  color: var(--text_color);
-  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+.experience:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
-.uk-timeline .uk-timeline-item .uk-timeline-content .uk-card .uk-card-body {
-  background-color: var(--background_color);
-  color: var(--text_color);
-  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+.experience:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
-.uk-timeline
-  .uk-timeline-item
-  .uk-timeline-content
-  .uk-card
-  .uk-card-header
-  .uk-card-title {
-  background-color: var(--background_color);
-  color: var(--text_color);
-  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+.separator {
+  min-width: 10px;
 }

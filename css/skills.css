@@ -20,7 +20,7 @@
 }
 
 #skills_section .subtitle {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "calibre_regular";
   font-size: larger;
   color: var(--text_color);
   transition: color 0.6s ease;
@@ -61,6 +61,7 @@
 
 #skills_section .skills_link:hover {
   padding-right: 25px;
+  cursor: pointer;
 }
 
 #skills_section .skills_link img {
