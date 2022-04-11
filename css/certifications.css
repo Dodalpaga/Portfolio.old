@@ -96,15 +96,7 @@
   color: var(--text_color);
   transition: 0.25s;
 }
-.image-block .fig1 {
-  bottom: -190px;
-}
-.image-block .fig2 {
-  bottom: -382px;
-}
-.image-block .fig3 {
-  bottom: -306px;
-}
+
 .image-block .caption h3 {
   margin: 10px;
   padding: 0;
@@ -132,18 +124,28 @@
   font-size: 18px;
 }
 
+.image-block .fig1 {
+  bottom: -190px;
+}
+.image-block .fig2 {
+  bottom: -343px;
+}
+.image-block .fig3 {
+  bottom: -267px;
+}
+
 @media screen and (max-width: 1400px) {
   .image-block {
     height: 500px;
     width: 85%;
   }
   .image-block .fig1 {
-    bottom: -210px;
+    bottom: -190px;
   }
   .image-block .fig2 {
-    bottom: -440px;
+    bottom: -383px;
   }
   .image-block .fig3 {
-    bottom: -365px;
+    bottom: -325px;
   }
 }
