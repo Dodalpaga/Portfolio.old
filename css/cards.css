@@ -93,9 +93,19 @@ h2:after {
 }
 .cards .ensmm {
   height: 60px;
-  width: 380px;
+  width: 130px;
+  background-color: rgb(235, 235, 235);
 }
-
+.cards .insa {
+  height: 60px;
+  background-color: rgb(235, 235, 235);
+  width: 270px;
+}
+.cards .enseeiht {
+  height: 60px;
+  background-color: rgb(235, 235, 235);
+  width: 270px;
+}
 .cards .card img {
   width: 100%;
   min-height: 100%;
