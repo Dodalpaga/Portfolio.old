@@ -11,18 +11,19 @@ function init() {
   renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.getElementById("model").appendChild(renderer.domElement);
-
   renderer.outputEncoding = THREE.sRGBEncoding;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.25;
 
-  camera = new THREE.PerspectiveCamera(
-    50,
-    window.innerWidth / window.innerHeight,
-    1,
-    1000
-  );
+  // Camera settings
+  const fov = 60;
+  const aspect = window.innerWidth / window.innerHeight;
+  const near = 0.1;
+  const far = 1000;
+  camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.set(0, 0, 500);
+
+  // Model movements
   controls = new OrbitControls(camera, renderer.domElement);
   controls.maxDistance = controls.minDistance = 250;
 
@@ -34,6 +35,7 @@ function init() {
   controls.autoRotateSpeed = 0.5;
   controls.enableDamping = true;
 
+  // Lights
   pointlight = new THREE.PointLight(0xffffff, 0.1);
   pointlight.position.set(200, 200, 200);
   scene.add(pointlight);

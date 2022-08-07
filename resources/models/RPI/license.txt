@@ -1,0 +1,11 @@
+Model Information:
+* title:	Raspberry Pi Pico
+* source:	https://sketchfab.com/3d-models/raspberry-pi-pico-79aba8c863a14b4682e34e241f2159d2
+* author:	abdoubouam (https://sketchfab.com/abdoubouam)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Raspberry Pi Pico" (https://sketchfab.com/3d-models/raspberry-pi-pico-79aba8c863a14b4682e34e241f2159d2) by abdoubouam (https://sketchfab.com/abdoubouam) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

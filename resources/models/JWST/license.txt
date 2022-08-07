@@ -1,0 +1,11 @@
+Model Information:
+* title:	JWST (james webb space telescope)
+* source:	https://sketchfab.com/3d-models/jwst-james-webb-space-telescope-6c92c08a672640afb58ee44d248fd0fe
+* author:	Paul (Sketchfab) (https://sketchfab.com/paul_sketch)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "JWST (james webb space telescope)" (https://sketchfab.com/3d-models/jwst-james-webb-space-telescope-6c92c08a672640afb58ee44d248fd0fe) by Paul (Sketchfab) (https://sketchfab.com/paul_sketch) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
