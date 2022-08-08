@@ -9,7 +9,7 @@ function hobby1() {
   scene = new THREE.Scene();
 
   renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-  renderer.setSize(400, 400);
+  renderer.setSize(500, 500);
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.outputEncoding = THREE.sRGBEncoding;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -24,13 +24,13 @@ function hobby1() {
   const fov = 60;
   const aspect = window.innerWidth / window.innerHeight;
   const near = 1.0;
-  const far = 1000;
+  const far = 5000;
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(12, 0, 0);
+  camera.position.set(2000, 700, 0);
 
   // Model movements
   controls = new OrbitControls(camera, renderer.domElement);
-  controls.target.set(0, -1, 0);
+  controls.target.set(0, 500, 0);
   let debug = false;
   if (debug) {
     controls.enablePan = true; // Empêche le déplacement en translation du modèle (clic-droit)
@@ -72,17 +72,19 @@ function hobby1() {
   scene.add(ambient);
 
   new RGBELoader()
-    .setPath("resources/textures/crab/")
+    .setPath("resources/textures/")
     .load("crab.hdr", function (texture) {
       texture.mapping = THREE.EquirectangularReflectionMapping;
       // scene.background = texture;
       scene.environment = texture;
 
       // Load model
-      let loader = new GLTFLoader();
-      loader.load("./resources/models/JWST/scene.gltf", function (gltf) {
+      const loader = new GLTFLoader();
+      loader.load("./resources/models/PRINTER/scene.gltf", function (gltf) {
         gltf.scene.children[0].scale.set(0.5, 0.5, 0.5);
         scene.add(gltf.scene);
+        renderer.setSize(500, 500);
+        camera.aspect = 500 / 500;
         animate();
       });
     });
@@ -90,9 +92,9 @@ function hobby1() {
 
 function animate() {
   controls.update();
-  camera.aspect = 400 / 400;
+  camera.aspect = 500 / 500;
   camera.updateProjectionMatrix();
-  renderer.setSize(400, 400);
+  renderer.setSize(500, 500);
   renderer.render(scene, camera);
   requestAnimationFrame(animate);
 }

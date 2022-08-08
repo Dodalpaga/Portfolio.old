@@ -56,7 +56,7 @@ function hobby2() {
   });
 
   new RGBELoader()
-    .setPath("resources/textures/other/")
+    .setPath("resources/textures/")
     .load("cayley_interior_4k.hdr", function (texture) {
       texture.mapping = THREE.EquirectangularReflectionMapping;
       // scene.background = texture;
@@ -66,7 +66,7 @@ function hobby2() {
       let loader = new GLTFLoader();
       loader.load("./resources/models/LAPTOP/scene.gltf", function (gltf) {
         let model = gltf.scene;
-        model.rotation.y = (-120 * Math.PI) / 180;
+        model.rotation.y = (-100 * Math.PI) / 180;
         model.children[0].scale.set(0.5, 0.5, 0.5);
         scene.add(model);
         animate();

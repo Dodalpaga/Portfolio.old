@@ -25,7 +25,7 @@ function hobby3() {
   const near = 0.1;
   const far = 1000;
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.set(0, 0.5, -0.5);
+  camera.position.set(0, 0.75, -0.75);
   camera.up.set(0, 0, 1);
 
   // Model movements
@@ -43,7 +43,7 @@ function hobby3() {
     controls.enableRotate = true; // Permet la rotation du modèle (clic-gauche)
     controls.enableZoom = false; // Empêche le scrolling sur le canva !!!
     controls.autoRotate = true;
-    controls.autoRotateSpeed = -1.5;
+    controls.autoRotateSpeed = -3;
     controls.enableDamping = true;
   }
 
@@ -72,8 +72,8 @@ function hobby3() {
   scene.add(ambient);
 
   new RGBELoader()
-    .setPath("resources/textures/other/")
-    .load("cayley_interior_4k.hdr", function (texture) {
+    .setPath("resources/textures/")
+    .load("neon_photostudio_4k.hdr", function (texture) {
       texture.mapping = THREE.EquirectangularReflectionMapping;
       // scene.background = texture;
       scene.environment = texture;
@@ -82,7 +82,7 @@ function hobby3() {
       let loader = new GLTFLoader();
       loader.load("./resources/models/RPI/scene.gltf", function (gltf) {
         let model = gltf.scene;
-        model.children[0].scale.set(3, 3, 3);
+        model.children[0].scale.set(5, 5, 5);
         scene.add(model);
         animate();
       });

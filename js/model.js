@@ -43,8 +43,8 @@ function init() {
   let envmaploader = new THREE.PMREMGenerator(renderer);
 
   new RGBELoader()
-    .setPath("./resources/textures/other/")
-    .load("cayley_interior_4k.hdr", function (hdrmap) {
+    .setPath("./resources/textures/")
+    .load("neon_photostudio_4k.hdr", function (hdrmap) {
       let envmap = envmaploader.fromCubemap(hdrmap);
       let texture = new THREE.CanvasTexture(new FlakesTexture());
       texture.wrapS = THREE.RepeatWrapping;
