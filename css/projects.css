@@ -93,6 +93,7 @@
 
 .wrapper .inside {
   z-index: 9;
+  cursor: pointer;
   background: var(--background_color);
   width: 140px;
   height: 140px;

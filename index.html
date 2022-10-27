@@ -190,7 +190,7 @@
         <section class="section" id="home_section">
           <div id="particles"></div>
           <div class="HOME" id="HOME">
-            <div id="model"></div>
+            <!-- <div id="model"></div> -->
             <div class="hi in_animation"></div>
           </div>
         </section>
@@ -555,53 +555,6 @@
           <div class="content leaning">
             <span class="section_title">Projects</span>
             <div class="project_line">
-              <div class="wrapper" id="laser-game-timer">
-                <div class="container">
-                  <div
-                    class="top"
-                    style="
-                      background: url(resources/images/LaserGate_1.jpg)
-                        no-repeat center center;
-                      height: 80%;
-                      -webkit-background-size: 100%;
-                      -moz-background-size: 100%;
-                      -o-background-size: 100%;
-                      background-size: 200%;
-                      width: 100%;
-                      filter: grayscale(50%);
-                    "
-                  ></div>
-                  <div class="bottom">
-                    <div class="left">
-                      <div class="details">
-                        <h1>Laser Gate Timer</h1>
-                        <p>Timer for rollerblade competitions</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="inside">
-                  <div class="icon">
-                    <i class="material-icons">info_outline</i>
-                  </div>
-                  <div class="contents">
-                    As my final year project, I created a timer for a
-                    rollerblade association competition. <br /><br />
-                    I created half the hardware from scratch (STM32 + PCB), with
-                    a 3D printed protection for the whole produt to fit in a
-                    backpack<br /><br />
-                    For programming I used C++ and Python, and for communication
-                    and I used 433 MHz and bluetooth low energy.<br /><br />
-                    Click here to check the
-                    <a
-                      target="_blank"
-                      href="https://github.com/Dodalpaga/Laser_Gate_Timer"
-                      >project</a
-                    >
-                  </div>
-                </div>
-              </div>
-
               <div class="wrapper" id="raspberry-projects">
                 <div class="container">
                   <div
@@ -610,18 +563,23 @@
                       background: url(resources/images/yolo.png) no-repeat
                         center center;
                       height: 80%;
-                      -webkit-background-size: 100%;
-                      -moz-background-size: 100%;
-                      -o-background-size: 100%;
-                      background-size: 410%;
-                      width: 100%;
+                      background-size: 500%;
                       filter: grayscale(50%);
                     "
                   ></div>
                   <div class="bottom">
                     <div class="left">
                       <div class="details">
-                        <h1>YOLOV5 Inference Runner App</h1>
+                        <h1>
+                          <a
+                            target="_blank"
+                            href="https://github.com/Dodalpaga/YOLOV5-Models"
+                            style="
+                              color: inherit; /* blue colors for links too */
+                            "
+                            >YOLOV5 Inference App</a
+                          >
+                        </h1>
                         <p>Pytorch inference runner on YOLO models</p>
                       </div>
                     </div>
@@ -640,7 +598,59 @@
                     Click here to check the
                     <a
                       target="_blank"
-                      href="https://github.com/Dodalpaga/YOLO-Inference-Runner-App"
+                      href="https://github.com/Dodalpaga/YOLOV5-Models"
+                      >project</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper" id="timeseries-labeling">
+                <div class="container">
+                  <div
+                    class="top"
+                    style="
+                      background: url(resources/images/timeseries.jpeg)
+                        no-repeat;
+                      height: 80%;
+                      background-size: 410%;
+                      width: 100%;
+                      filter: grayscale(50%);
+                    "
+                  ></div>
+                  <div class="bottom">
+                    <div class="left">
+                      <div class="details">
+                        <h1>
+                          <a
+                            target="_blank"
+                            href="https://github.com/Dodalpaga/TimeSeries-Analysis-Dash-App"
+                            style="
+                              color: inherit; /* blue colors for links too */
+                            "
+                            >TimeSeries Labeling App</a
+                          >
+                        </h1>
+                        <p>A tool for multi-label timeseries labeling</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inside">
+                  <div class="icon">
+                    <i class="material-icons">info_outline</i>
+                  </div>
+                  <div class="contents">
+                    I created an app to label timeseries for multi-label use
+                    cases. You simply need to upload a CSV file and go to the
+                    <strong>Timeseries</strong> tab so you have a rather simple
+                    interface that allows you to select portions of a timeseries
+                    and label it with multiple classes<br /><br />
+                    <br /><br />
+                    Click here to check the
+                    <a
+                      target="_blank"
+                      href="https://github.com/Dodalpaga/TimeSeries-Analysis-Dash-App"
                       >project</a
                     >
                   </div>
@@ -655,18 +665,23 @@
                       background: url(resources/images/bifurcation_diagram_dark.png)
                         no-repeat center center;
                       height: 80%;
-                      -webkit-background-size: 100%;
-                      -moz-background-size: 100%;
-                      -o-background-size: 100%;
-                      background-size: 200%;
+                      background-size: 300%;
                       background-position-x: right;
-                      width: 100%;
                     "
                   ></div>
                   <div class="bottom">
                     <div class="left">
                       <div class="details">
-                        <h1>Processing Projects</h1>
+                        <h1>
+                          <a
+                            target="_blank"
+                            href="https://github.com/Dodalpaga/Processing-Projects"
+                            style="
+                              color: inherit; /* blue colors for links too */
+                            "
+                            >Processing (DataViz)</a
+                          >
+                        </h1>
                         <p>
                           Numerous visual projects (lissajou, pendulums, ...)
                         </p>
@@ -700,20 +715,25 @@
                       background: url(resources/images/vrp-example.png)
                         no-repeat center center;
                       height: 80%;
-                      -webkit-background-size: 100%;
-                      -moz-background-size: 100%;
-                      -o-background-size: 100%;
-                      background-size: 200%;
+                      background-size: 250%;
                       background-position-x: 0;
-                      width: 100%;
                       filter: grayscale(50%);
                     "
                   ></div>
                   <div class="bottom">
                     <div class="left">
                       <div class="details">
-                        <h1>CVRP</h1>
-                        <p>Capacited Vehicle Route Problem</p>
+                        <h1>
+                          <a
+                            target="_blank"
+                            href="https://github.com/Dodalpaga/CVRP"
+                            style="
+                              color: inherit; /* blue colors for links too */
+                            "
+                            >CVRP</a
+                          >
+                        </h1>
+                        <p>Capacited Vehicle Route Optimization</p>
                       </div>
                     </div>
                   </div>
@@ -746,18 +766,23 @@
                       background: url(resources/images/weather.jpeg) no-repeat
                         center center;
                       height: 80%;
-                      -webkit-background-size: 100%;
-                      -moz-background-size: 100%;
-                      -o-background-size: 100%;
-                      background-size: 300%;
-                      width: 100%;
+                      background-size: 400%;
                       filter: grayscale(50%);
                     "
                   ></div>
                   <div class="bottom">
                     <div class="left">
                       <div class="details">
-                        <h1>Defi IA 2022</h1>
+                        <h1>
+                          <a
+                            target="_blank"
+                            href="https://github.com/Dodalpaga/Defi-IA-2022-MeteoNet"
+                            style="
+                              color: inherit; /* blue colors for links too */
+                            "
+                            >Defi IA 2022</a
+                          >
+                        </h1>
                         <p>Machine Learning project on weather forecasting</p>
                       </div>
                     </div>
@@ -768,13 +793,69 @@
                     <i class="material-icons">info_outline</i>
                   </div>
                   <div class="contents">
-                    Some visual programming such as the bifurcation diagram or
-                    Lissajou's curves. Also some animations like the solar
-                    system or a double pendulum simulation.<br /><br />
+                    I participated to a competition gathering a hundred team of
+                    3 to 4 studends. The aim was to predict the amount of rain
+                    for a specific day using data gathered for said day.
+                    <br /><br />
                     Click here to check the
                     <a
                       target="_blank"
                       href="https://github.com/Dodalpaga/Defi-IA-2022-MeteoNet"
+                      >project</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper" id="laser-game-timer">
+                <div class="container">
+                  <div
+                    class="top"
+                    style="
+                      background: url(resources/images/LaserGate_1.jpg)
+                        no-repeat center center;
+                      height: 80%;
+                      -webkit-background-size: 100%;
+                      -moz-background-size: 100%;
+                      -o-background-size: 100%;
+                      background-size: 200%;
+                      filter: grayscale(50%);
+                    "
+                  ></div>
+                  <div class="bottom">
+                    <div class="left">
+                      <div class="details">
+                        <h1>
+                          <a
+                            target="_blank"
+                            href="https://github.com/Dodalpaga/Laser_Gate_Timer"
+                            style="
+                              color: inherit; /* blue colors for links too */
+                            "
+                            >Laser Gate Timer</a
+                          >
+                        </h1>
+                        <p>Timer for rollerblade competitions</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inside">
+                  <div class="icon">
+                    <i class="material-icons">info_outline</i>
+                  </div>
+                  <div class="contents">
+                    As my final year project, I created a timer for a
+                    rollerblade association competition. <br /><br />
+                    I created half the hardware from scratch (STM32 + PCB), with
+                    a 3D printed protection for the whole produt to fit in a
+                    backpack<br /><br />
+                    For programming I used C++ and Python, and for communication
+                    and I used 433 MHz and bluetooth low energy.<br /><br />
+                    Click here to check the
+                    <a
+                      target="_blank"
+                      href="https://github.com/Dodalpaga/Laser_Gate_Timer"
                       >project</a
                     >
                   </div>
