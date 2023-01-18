@@ -66,6 +66,7 @@ body {
   --links: rgb(83, 167, 235);
   --menu_hover_color: white;
   --hue: 100%;
+  --hue2: 60%;
 }
 
 body.light {
@@ -85,4 +86,5 @@ body.light {
   --links: rgb(110, 25, 25);
   --menu_hover_color: var(--blue);
   --hue: 0%;
+  --hue2: 0%;
 }
