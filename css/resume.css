@@ -1,117 +1,60 @@
-/* CSS */
-.button-49,
-.button-49:after {
-  --largeur: 150px;
-  width: var(--largeur);
-  height: 76px;
-  line-height: 78px;
+.iconDiv {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 200;
+  bottom: 15px;
+  right: 25px;
+  padding: 15px 20px;
   font-size: 20px;
-  font-family: "calibre_regular";
-  background: linear-gradient(45deg, transparent 5%, var(--blue) 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  box-shadow: 6px 0px 0px var(--light_blue);
-  outline: transparent;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-
+  background: var(--background_color);
+  color: var(--text_color);
+  box-shadow: 5px 5px 10px var(--fade_text_color);
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: var(--text_color);
+  filter: drop-shadow(0px 0px 10px var(--fade_text_color));
+  height: 36px;
+  width: 27px;
+  white-space: nowrap;
+  overflow: hidden;
   cursor: pointer;
+  transition: background-color 0.6s ease;
+  filter: drop-shadow(0px 0px 10px var(--fade_text_color));
+}
+.iconSVG {
+  font-size: 36px;
+  height: 100%;
+  width: 100%;
+}
+.iconDiv:hover,
+.iconDiv:focus-visible {
+  width: 110px;
+  background-color: var(--light_gray);
+  transition: width 300ms ease-in-out 0s, background-color 100ms linear 0s;
+}
+.iconDiv:focus-visible {
+  outline: 1px solid var(--light_gray);
+  outline-offset: 4px;
+}
+.iconDiv:active {
+  opacity: 0.9;
+}
+.iconDiv::after {
+  content: attr(tooltip);
+  margin-left: 25px;
+  animation: fadeIn 600ms linear forwards;
 }
 
-.button-49:after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-
-  content: "RESUME";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    45deg,
-    transparent 3%,
-    var(--light_blue) 3%,
-    var(--light_blue) 5%,
-    var(--blue) 5%
-  );
-  text-shadow: -3px -3px 0px #5f5f5f, 3px 3px 0px var(--fade_text_color);
-  clip-path: var(--slice-0);
-}
-
-.button-49:hover:after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-}
-
-@keyframes glitch {
+@keyframes fadeIn {
   0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
+    opacity: 0;
   }
   50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
+    opacity: 0;
   }
   100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
-}
-
-@media screen and (min-width: 780px) {
-  .button-49,
-  .button-49:after {
-    position: absolute;
-    bottom: 60px;
-    left: calc(100% - 180px);
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .button-49,
-  .button-49:after {
-    left: calc(50% - var(--largeur) / 2);
-    margin-bottom: 10px;
+    opacity: 1;
   }
 }
